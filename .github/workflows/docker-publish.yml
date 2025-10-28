@@ -25,8 +25,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: ./RGIS-SpletnaKnjigarna
-          file: ./RGIS-SpletnaKnjigarna/Dockerfile
+          context: ./RGIS-SpletnaKnjigarna/RGIS-SpletnaKnjigarna
+          file: ./RGIS-SpletnaKnjigarna/RGIS-SpletnaKnjigarna/Dockerfile
           push: true
           tags: |
             lanbrezo/rgis:latest
