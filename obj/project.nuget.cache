@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "0vo0vQChS3E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Uporabnik\\Desktop\\FERI\\2 LETNIK\\1 SEMESTER\\Razvoj in gradnja informacijskih sistemov\\RGIS-SpletnaKnjigarna\\RGIS-SpletnaKnjigarna\\RGIS-SpletnaKnjigarna.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.17\\microsoft.dotnet.ilcompiler.8.0.17.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.17\\microsoft.net.illink.tasks.8.0.17.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.17\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.17.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.17\\microsoft.netcore.app.host.win-x64.8.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
