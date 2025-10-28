@@ -20,7 +20,7 @@ RUN apt-get update \
     clang zlib1g-dev
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["RGIS-SpletnaKnjigarna/RGIS-SpletnaKnjigarna.csproj", "RGIS-SpletnaKnjigarna/"]
+COPY ["RGIS-SpletnaKnjigarna.csproj", "./"]
 RUN dotnet restore "./RGIS-SpletnaKnjigarna/RGIS-SpletnaKnjigarna.csproj"
 COPY . .
 WORKDIR "/src/RGIS-SpletnaKnjigarna"
