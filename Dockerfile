@@ -3,7 +3,7 @@
 ARG LAUNCHING_FROM_VS
 ARG FINAL_BASE_IMAGE=${LAUNCHING_FROM_VS:+aotdebug}
 
-# === Base stage (runtime) ===
+# === Base stage ===
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 8080
@@ -14,10 +14,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends clang zlib1g-de
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# 🔧 Tukaj je glavni popravek – kopiramo celotno vsebino projekta
+# 🔧 Tu se projekt nahaja v isti mapi kot .csproj
 COPY . .
 
-# 🔧 Zdaj lahko restoraš in gradiš neposredno .csproj
 RUN dotnet restore "RGIS-SpletnaKnjigarna.csproj"
 RUN dotnet build "RGIS-SpletnaKnjigarna.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
@@ -26,7 +25,7 @@ FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "RGIS-SpletnaKnjigarna.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=true
 
-# === Final runtime image ===
+# === Final stage ===
 FROM ${FINAL_BASE_IMAGE:-mcr.microsoft.com/dotnet/runtime-deps:8.0} AS final
 WORKDIR /app
 EXPOSE 8080
